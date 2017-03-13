@@ -4,11 +4,22 @@
   
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <deploy.version>0.0.1-SNAPSHOT</deploy.version>
+    <java.version>1.8</java.version>
+    <spring.version>1.5.1.RELEASE</spring.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <groupId>org.distributedtest</groupId>
   <artifactId>root</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${deploy.version}</version>
   <packaging>pom</packaging>
   <name>root</name>
+  
+  
   
   <modules>
     <module>core</module>
@@ -17,12 +28,6 @@
     <module>filereader</module>
     <module>producer</module>
   </modules>
-
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <dependencies>
     <dependency>
