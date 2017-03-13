@@ -1,0 +1,7 @@
+# git ignore settings
+.project
+
+.settings
+
+target
+.classpath
