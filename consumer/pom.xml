@@ -11,13 +11,18 @@
 
   <artifactId>consumer</artifactId>
   <name>consumer</name>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   
   
   <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
+        <version>1.5.1.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-tomcat</artifactId>
         <version>1.5.1.RELEASE</version>
     </dependency>
 	
@@ -37,8 +42,21 @@
   <build>
     <plugins>
         <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>1.5.1.RELEASE</version>
+          <configuration>
+              <executable>true</executable>
+          </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <archiveClasses>true</archiveClasses>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
         </plugin>
     </plugins>
   </build>
