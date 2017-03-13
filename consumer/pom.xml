@@ -6,7 +6,7 @@
   <parent>
     <artifactId>root</artifactId>
     <groupId>org.distributedtest</groupId>
-    <version>${deploy.version}</version>
+    <version>0.1</version>
   </parent>
 
   <artifactId>consumer</artifactId>
@@ -29,13 +29,13 @@
     <dependency>
         <groupId>org.distributedtest</groupId>
         <artifactId>core</artifactId>
-        <version>${deploy.version}</version>
+        <version>0.1</version>
     </dependency>
 	
     <dependency>
         <groupId>org.distributedtest</groupId>
         <artifactId>dao</artifactId>
-        <version>${deploy.version}</version>
+        <version>0.1</version>
     </dependency>
   </dependencies>
   

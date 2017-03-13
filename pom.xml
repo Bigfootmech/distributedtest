@@ -5,7 +5,6 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <deploy.version>0.0.1-SNAPSHOT</deploy.version>
     <java.version>1.8</java.version>
     <spring.version>1.5.1.RELEASE</spring.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -15,7 +14,7 @@
   
   <groupId>org.distributedtest</groupId>
   <artifactId>root</artifactId>
-  <version>${deploy.version}</version>
+  <version>0.1</version>
   <packaging>pom</packaging>
   <name>root</name>
   

@@ -6,7 +6,7 @@
   <parent>
     <artifactId>root</artifactId>
     <groupId>org.distributedtest</groupId>
-    <version>${deploy.version}</version>
+    <version>0.1</version>
   </parent>
 
   <artifactId>producer</artifactId>
@@ -23,7 +23,7 @@
     <dependency>
       <groupId>org.distributedtest</groupId>
       <artifactId>filereader</artifactId>
-      <version>${deploy.version}</version>
+      <version>0.1</version>
     </dependency>
   </dependencies>
   
